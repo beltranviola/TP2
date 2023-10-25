@@ -1,0 +1,94 @@
+ion-content {
+  --background: #3cbdf5; /* Cambia el color de fondo del contenido */
+  }
+
+  .divImagenes {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .seccion {
+    flex: 1;
+    padding: 10px;
+  }
+
+  .iconoVolver{
+    height: 40px;
+    width: 40px;
+    margin-top: 25px;
+  }
+
+  .iconoAvion{
+    height: 40px;
+    width: 40px;
+    margin-left: 200px;
+    margin-top: 25px;
+  }
+
+  .elegirPlan-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  }
+
+  form {
+  width: 80%;
+  max-width: 300px;
+  }
+  ion-item {
+  --ion-item-background: rgb(241, 239, 239); /* Cambia el color de fondo de los
+  elementos del formulario */
+  border-radius: 80px;
+  margin-bottom: 10px;
+
+  }
+  ion-label {
+  color: #b3b2b2; /* Cambia el color del texto de las etiquetas */
+  border-radius: 50%;
+  
+  }
+  ion-button {
+  background: #007bff; /* Cambia el color de fondo del botón */
+  color: #fff; /* Cambia el color del texto del botón */
+  border-radius: 8px;
+  }
+  /* Estilos para el enlace de inicio de sesión */
+
+  .custom-button {
+    --background: rgba(173, 216, 230, 0.8); /* Cambia el color de fondo del botón a blanco */
+    color: #fff; /* Cambia el color del texto del botón */
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.buscarPlanDiv{
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  display: flex;
+}
+
+.comprarLink{
+  background-color: blue;
+  color: #fff;
+  text-decoration: none;
+  justify-content: center;
+  width: 90%;
+  height: auto;
+
+}
+
+.boton1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 210px;
+  height: 27px;
+  background-color: blue;
+  font-weight: bold;
+  border-radius: 130px;
+  display: flex;
+}

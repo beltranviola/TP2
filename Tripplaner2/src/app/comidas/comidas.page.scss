@@ -1,0 +1,87 @@
+
+
+ion-title{
+    margin-left: 48px;
+}
+
+
+ion-content {
+    --ion-background-color: #3cbdf5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+   
+  .comidas-fila {
+    width: 100%;
+    background-color: rgba(211, 211, 211, 0.5);
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+
+
+  .resto-image {
+    width: 50%;
+    max-width: 100%;
+    margin: 20px auto;
+    border: 2px solid black;
+    text-align: center;
+  }
+ 
+  .resto-image img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+
+  .maps {
+    width: 70%;
+    max-width: 100%;
+    margin: 1rem auto;
+    border: 2px solid black;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+  }
+ 
+  .maps img {
+    max-width: 100%;
+    display: block;
+    margin: 0;
+  }
+ 
+
+
+.precio{
+    width: 100%;
+    background-color: #737A7A ;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    font-size: 1.3rem;
+}
+
+
+.linea-separadora {
+    border: none;
+    height: 0.2rem;
+    background-color: black;
+    width: 100%;
+  }  
+
+
+
+
+  .logo-container {
+    text-align: center;
+    padding: 20px 0;
+  }
+ 
+.logo-container img {
+    max-width: 60%;
+    margin-top: 25px;}

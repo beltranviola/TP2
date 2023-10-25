@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Local Comercial</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <h2 style="border-bottom: solid 1px;">Cargar los datos del servicio:</h2>
+  <ion-item class="label1">
+    <ion-label>Nombre: </ion-label>
+    <ion-input type="text" class="input1" [(ngModel)]="Nombre"></ion-input>
+  </ion-item>
+
+
+  <ion-item class="label1">
+    <ion-label>Imagen: </ion-label>
+    <ion-input type="text" class="input1" [(ngModel)]="Imagen"></ion-input>
+  </ion-item>
+  <ion-item class="label1">
+    <ion-label>Direccion: </ion-label>
+    <ion-input type="text" class="input1" [(ngModel)]="Direccion"></ion-input>
+  </ion-item>
+
+
+  <ion-item class="label1">
+    <ion-label>Precio: </ion-label>
+    <ion-input type="text" class="input1" [(ngModel)]="Precio"></ion-input>
+  </ion-item>
+
+
+  <ion-list>
+  <ion-item>
+    <ion-select placeholder="seleccionar ciudad" [(ngModel)]="CiudadId">
+      <div *ngFor="let d of ciudades">
+        <ion-select-option value="{{d.Id}}">{{d.Nombre}}</ion-select-option>
+      </div>
+  </ion-select>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-select placeholder="seleccionar Tipo de servicio" [(ngModel)]="TipoServicioId">
+      <div *ngFor="let d of tiposervicio">
+        <ion-select-option value="{{d.Id}}">{{d.Nombre}}</ion-select-option>
+      </div>
+  </ion-select>
+  </ion-item>
+</ion-list>
+
+
+  <ion-button class="boton1" (click)="Cargarproducto()">Agregar datos</ion-button>
+</ion-content>

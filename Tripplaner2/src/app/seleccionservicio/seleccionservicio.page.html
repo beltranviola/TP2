@@ -1,0 +1,97 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="crear-viaje"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Paris</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="ion-padding">
+  <ion-list>
+
+
+    <!-- Selección Hospedaje -->
+    <ion-item-group>
+      <ion-item-divider>
+        <ion-label>Seleccionar Hotel <ion-icon name="bed-outline" slot="start"></ion-icon></ion-label>
+      </ion-item-divider>
+      <ion-radio-group>
+        <ion-item *ngFor="let hotel of datosHoteles">
+          <ion-avatar slot="start">
+            <ion-img [src]="hotel.Imagen"></ion-img>
+          </ion-avatar>
+          <ion-label class="labels" aria-label="Hotel">{{hotel.Nombre}}<span class="precios">${{hotel.Precio}}</span></ion-label>
+          <ion-radio slot="start" [value]="hotel"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-item-group>
+
+
+    <!-- Selección Restaurante -->
+    <ion-item-group>
+      <ion-item-divider>
+        <ion-label>Seleccionar Restaurante<ion-icon name="restaurant-outline" slot="start"></ion-icon></ion-label>
+      </ion-item-divider>
+      <ion-radio-group>
+        <ion-item *ngFor="let gastronomia of datosGastronomia">
+          <ion-avatar slot="start">
+            <ion-img [src]="gastronomia.Imagen"></ion-img>
+          </ion-avatar>
+          <ion-label class="labels" aria-label="Hotel">{{gastronomia.Nombre}}<span class="precios">${{gastronomia.Precio}}</span></ion-label>
+          <ion-radio slot="start" [value]="gastronomia"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-item-group>
+
+
+    <!-- Selección Excursión -->
+    <ion-item-group>
+      <ion-item-divider>
+        <ion-label>Seleccionar Excursión<ion-icon name="compass-outline" slot="start"></ion-icon></ion-label>
+      </ion-item-divider>
+      <ion-radio-group>
+        <ion-item *ngFor="let excursion of datosExcursiones">
+          <ion-avatar slot="start">
+            <ion-img [src]="excursion.Imagen"></ion-img>
+          </ion-avatar>
+          <ion-label class="labels" aria-label="Hotel">{{excursion.Nombre}}<span class="precios">${{excursion.Precio}}</span></ion-label>
+          <ion-radio slot="start" [value]="excursion"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-item-group>
+
+
+    <!-- Selección Movilidad -->
+    <ion-item-group>
+      <ion-item-divider>
+        <ion-label>Seleccionar Movilidad<ion-icon name="car-outline" slot="start"></ion-icon></ion-label>
+      </ion-item-divider>
+      <ion-radio-group>
+        <ion-item *ngFor="let movilidad of datosMovilidades">
+          <ion-avatar slot="start">
+            <ion-img [src]="movilidad.Imagen"></ion-img>
+          </ion-avatar>
+          <ion-label class="labels" aria-label="Hotel">{{movilidad.Nombre}}<span class="precios">${{movilidad.Precio}}</span></ion-label>
+          <ion-radio slot="start" [value]="movilidad"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-item-group>
+  </ion-list>
+  <br>
+
+
+  <!-- PARIS -->
+
+
+
+
+
+
+  <!-- Botón Comprar Plan -->
+  <ion-button expand="full" color="success" href="plan-listo">
+    <ion-icon name="cart-outline" slot="start"></ion-icon>
+    Comprar Plan
+  </ion-button>
+</ion-content>

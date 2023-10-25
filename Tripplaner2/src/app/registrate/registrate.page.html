@@ -1,0 +1,83 @@
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Regístrate</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <div class="register-container">
+    <ion-img src="assets/triplanner-logo.png" alt="Logo de la aplicación" id="Logo"></ion-img>
+   
+    <ion-item class="tipo-usuario">
+      <ion-label>Tipo</ion-label>
+      <ion-select placeholder="Seleccionar tipo" [(ngModel)]="Perfil" required>
+        <ion-select-option value="usuario">Usuario</ion-select-option>
+        <ion-select-option value="comercial">Local Comercial</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-list *ngIf="Perfil=='usuario'">
+     
+       
+       
+      <ion-item>
+        <ion-label position="floating">Nombre</ion-label>
+        <ion-input type="text" [(ngModel)]="Nombre" required ></ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label position="floating">Correo Electrónico</ion-label>
+        <ion-input type="email" [(ngModel)]="Email" required></ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input type="password" [(ngModel)]="Contra" required></ion-input>
+      </ion-item>
+      <ion-button expand="full" color="primary" type="submit"  (click)="registrarusuariocomun()">Registrarse</ion-button>
+
+
+     
+    </ion-list>
+
+
+    <ion-list *ngIf="Perfil=='comercial'">
+     
+       
+       
+      <ion-item>
+        <ion-label position="floating">Nombre</ion-label>
+        <ion-input type="text" [(ngModel)]="Nombre" required></ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label position="floating">Correo Electrónico</ion-label>
+        <ion-input type="email" [(ngModel)]="Email" required></ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input type="password" [(ngModel)]="Contra" required></ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label position="floating">CUIT</ion-label>
+        <ion-input type="password" [(ngModel)]="cuit" required></ion-input>
+      </ion-item>
+      <ion-button expand="full" color="primary" type="submit"  (click)="registrarusuariocomercial()">Registrarse</ion-button>
+     
+    </ion-list>
+   
+
+
+   
+    <div class="login-link">
+      ¿Ya tienes una cuenta? <a href="inicio-de-sesion">Iniciar Sesión</a>
+    </div>
+  </div>
+</ion-content>

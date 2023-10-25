@@ -1,0 +1,66 @@
+ion-content {
+    --background: transparent !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+   
+  }
+
+
+  .texto{
+    text-align: center;
+
+
+  }
+ 
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3cbdf5;
+    z-index: -1;
+  }
+ 
+  h2 {
+    color: white;
+    font-weight: bold;
+  }
+
+
+  .imagen{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    border: 0.3rem solid blue;
+    position: relative;
+  }
+
+
+  #textopar{
+    color: blue;
+  }
+ 
+ 
+  .logo {
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+        margin-top: 2rem;
+  }
+
+
+  #linkvp{
+    margin-top: 2rem;
+  }
+ 
+  .centrado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }

@@ -1,0 +1,131 @@
+ion-content {
+  --background: #3cbdf5;
+  }
+  ion-title {
+  text-align: center;
+  }
+
+  .divImagenes {
+    display: flex;
+    justify-content: space-between;
+   
+  }
+ 
+ 
+ 
+  .seccion {
+    flex: 1;
+    padding: 10px;
+    size: 24px;
+   
+  }
+
+  .iconoMenu{
+    height: 40px;
+    width: 40px;
+    margin-top: 25px;
+  }
+
+  .iconoAvion{
+    height: 40px;
+    width: 40px;
+    margin-left: 200px;
+    margin-top: 25px;
+  }
+
+
+  /* datos */
+  .register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+ 
+  }
+  ion-item {
+  --ion-item-background: transparent;
+ 
+  padding-bottom: 8px;
+  }
+  form {
+  width: 80%;
+  max-width: 300px;
+  }
+
+  ion-list{
+    width: 80%;
+  max-width: 300px;
+  background-color: #3cbdf5;
+  }
+  ion-item {
+  --ion-item-background: rgb(241, 239, 239);
+ 
+
+  }
+  ion-label {
+  color: #b3b2b2;
+  border-radius: 50%;
+ 
+  }
+ 
+  #Logo {
+  max-width: 150px;
+ 
+  margin-bottom: 20px;
+  }
+  ion-button {
+  background: #007bff;
+  color: #fff;
+  border-radius: 8px;
+  }
+ 
+  .login-link {
+  text-align: center;
+  margin-top: 20px;
+  }
+  .login-link a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  }
+
+  .login-link a:hover {
+  text-decoration: underline;
+  }
+
+.elecciones{
+background-color: rgb(231, 230, 230);
+color: #b3b2b2;
+border: none !important;
+box-shadow: none !important;
+outline: none !important;
+padding: 0px;
+  }
+
+.buscarPlanDiv{
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  display: flex;
+}
+
+.navLink{
+  background-color: blue;
+  color: #fff;
+  text-decoration: none;
+  justify-content: center;
+  width: 90%;
+  height: auto;
+
+}
+
+.boton1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 210px;
+  height: 27px;
+  background-color: blue;
+}
